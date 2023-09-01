@@ -23,6 +23,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
+- Step 0 Create a Microsoft Azure Subscription (Note: credit card needed for free Azure credits)
 - Step 1 Create a Resource Group
 - Step 2 Create a Windows 10 Virtual Machine (VM), select the previously created Resource Group, allow the VM to create a Virtual 
          Network 
@@ -34,11 +35,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <p>
 
-![image](https://github.com/JacobLebron/azure-network-protocols/assets/143144930/73d9c4fa-ae76-4a67-8eca-82b16d9f6fa7)
+![image](https://github.com/JacobLebron/azure-network-protocols/assets/143144930/47e20ffe-310a-4b9e-b973-68ff701d51f8)
+
 
 </p>
 <p>
-While creating the Windows 10 VM, notice that a new Virtual Network (Vnet) and Subnet is created automatically. In order for the Linux VM to communicate with the Windows VM, make sure that both VMs are using both the previously created Resource Group and Vnet.
+While creating the Windows 10 VM, notice that a new Virtual Network (Vnet) and Subnet is created automatically. In order for the Linux VM to communicate with the Windows 10 VM, make sure that both VMs are using both the previously created Resource Group and Vnet.
 
 <h2> Observe ICMP Traffic</h2>
 
@@ -46,6 +48,8 @@ While creating the Windows 10 VM, notice that a new Virtual Network (Vnet) and S
 - Step 2 Within your Windows 10 Virtual Machine, Install Wireshark
 - Step 3 Open Wireshark and filter for ICMP traffic only
 - Step 4 Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM
+- Step 5 Observe ping requests and replies within WireShark
+- Step 6 From The Windows 10 VM, open command line or PowerShell and attempt to ping a public website (i.e. www.amazon.com)
 
 
  
