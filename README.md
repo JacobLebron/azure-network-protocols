@@ -58,7 +58,8 @@ While creating the Windows 10 VM, notice that a new Virtual Network (Vnet) and S
 
 <p> 
 
-         
+  ![image](https://github.com/JacobLebron/azure-network-protocols/assets/143144930/19def467-9d8e-4155-ba66-5fcc69a663af)
+       
 
 </p>
 <p>
